@@ -5,7 +5,7 @@ date: "February 09, 2018"
 
 Recently, I released Drip, an iOS app designed to make it as convenient as possible to log the water you drink. If you'd like more info on Drip you can view the product page, or check it out on the App Store. Here I just wanted to give some background on where need for a tool like Drip came from and how I use it.
 
-![drip main screen](../images/drip-main.gif)
+![drip main screen](./drip-main.gif)
 
 Lately I’ve been using the awesome iOS app Streaks to build a few daily habits. For those who don't know, Streaks lets you set a list of tasks that you want to complete every day, with the goal of building a streak of days that you complete these tasks. I've found it really helpful in gamifying otherwise mundane habits. After a few weeks being more dehydrated than usual, I created a Streaks goal of drinking 3L (about 13 cups) of water per day. Streaks integrates HealthKit which means that if I logged my water consumption in HealthKit, Streaks can automatically track whether I completed by goal of 3L per day. 
 

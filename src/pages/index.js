@@ -40,6 +40,7 @@ function postsFromData(data) {
     posts.push(
     <div>
       <h2>{node.frontmatter.title}</h2>
+      <p>{node.frontmatter.date}</p>
       <div dangerouslySetInnerHTML={{ __html: node.html }} />
       <br/>
       <hr/>

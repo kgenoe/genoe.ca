@@ -1,5 +1,6 @@
 import React from "react"
 import { graphql } from "gatsby"
+import { Link } from "gatsby"
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
@@ -10,6 +11,13 @@ export default ({ data }) => {
     <Layout>
       <SEO title="Home" />
       {postsFromData(data)}
+      <Link 
+        to="/posts/"
+        activeStyle={{ color: `darkGrey` }}
+        style={{ color: `black` }}
+      >
+        View All Posts
+      </Link>
     </Layout>
   )
 }

@@ -16,7 +16,7 @@ export default ({ data }) => {
         activeStyle={{ color: `darkGrey` }}
         style={{ color: `black` }}
       >
-        View All Posts
+      View All Posts
       </Link>
     </Layout>
   )
@@ -36,6 +36,9 @@ export const query = graphql`
           title
           date
         }
+        fields {
+          slug
+        }
       }
     }
   }
@@ -47,7 +50,16 @@ function postsFromData(data) {
   data.allMarkdownRemark.edges.forEach(( { node }) => {
     posts.push(
     <div>
-      <h2>{node.frontmatter.title}</h2>
+      <Link
+        to={`/posts/${node.fields.slug}`}
+        activeStyle={{ color: `darkGrey` }}
+        style={{ 
+          textDecoration: `none`,
+          color: `black`,
+        }}
+      >
+        <h2>{node.frontmatter.title}</h2>
+      </Link>
       <p>{node.frontmatter.date}</p>
       <div dangerouslySetInnerHTML={{ __html: node.html }} />
       <br/>

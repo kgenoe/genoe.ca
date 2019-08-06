@@ -1,0 +1,15 @@
+---
+title: "Watcher"
+---
+
+![watcher app icon](./images/watcher-app-icon.png)
+
+Watcher is a basic website monitoring application for iOS. Watcher will periodically check websites for any changes in their HTML code. When the HTML changes, you will be notified based on the alert settings for that website. Make sure notifications for this app are enabled to be alerted properly.
+
+![watcher app view](./images/watcher-app.png)
+
+Inspiration for Watcher came from repeatedly checking John Gruber’s Daring Fireball for tickets to the live recording of The Talk Show to become available.
+
+![app store link](./images/appstore.png)
+
+![github link](./images/github.png)

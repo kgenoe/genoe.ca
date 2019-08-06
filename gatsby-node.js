@@ -10,13 +10,15 @@ exports.onCreateNode = ({ node, getNode, actions }) => {
     const { createNodeField } = actions
     if (node.internal.type === `MarkdownRemark`) {        
         const fileNode = getNode(node.parent)
+        const slug = createFilePath({ node, getNode, basePath: fileNode.relativeDirectory })
+        
         if (fileNode.relativeDirectory.includes("pages/posts")) {
-            const slug = createFilePath({ node, getNode, basePath: fileNode.relativeDirectory })
-            createNodeField({
-                node,
-                name: `slug`,
-                value: slug,
-            })
+            createNodeField({ node, name: `slug`, value: slug })
+            createNodeField({ node, name: `contentType`, value: "post" })
+        }
+        if (fileNode.relativeDirectory.includes("pages/projects")) {
+            createNodeField({ node, name: `slug`, value: slug })
+            createNodeField({ node, name: `contentType`, value: "project" })
         }
     }
 }
@@ -35,21 +37,35 @@ exports.createPages = ({ graphql, actions }) => {
                 node {
                     fields{
                         slug
+                        contentType
                     }
+                    fileAbsolutePath
                 }
             }
         }
     }  
     `).then(result => {
         result.data.allMarkdownRemark.edges.forEach(( { node}) => {
-            createPage({
-                path: `posts${ node.fields.slug}`,
-                component: path.resolve(`./src/templates/post.js`),
-                context: {
-                    // Data passed to context is available in page queries as GraphQL variables
-                    slug: node.fields.slug
-                },
-            })
+            if (node.fields.contentType === "post") {
+                createPage({
+                    path: `posts${ node.fields.slug}`,
+                    component: path.resolve(`./src/templates/post.js`),
+                    context: {
+                        // Data passed to context is available in page queries as GraphQL variables
+                        slug: node.fields.slug
+                    },
+                })
+            }
+            else if (node.fields.contentType === "project") {
+                createPage({
+                    path: `projects${ node.fields.slug}`,
+                    component: path.resolve(`./src/templates/project.js`),
+                    context: {
+                        // Data passed to context is available in page queries as GraphQL variables
+                        slug: node.fields.slug
+                    },
+                })
+            }
         })
     })
 }

@@ -1,22 +1,32 @@
 import React from "react"
 import Img from "gatsby-image"
+import { Link } from "gatsby"
 
 const Project = props => {
     return (
         <header>
             <div>
-                <h3 style={{textAlign: "center" }}>
-                    {props.title}
-                </h3>
-                <Img 
-                    // fixed={data.image.childImageSharp.fixed}
-                    fixed={props.img}
-                    style={{
-                        marginLeft: "auto",
-                        marginRight: "auto",
-                        display: "block",
+                <Link
+                    to={props.slug}
+                    activeStyle={{ color: `darkGray` }}
+                    style={{ 
+                      textDecoration: `none`,
+                      color: `black`,
+                      margin: `0 0.5rem 0 0`,
                     }}
-                /> 
+                >
+                    <h3 style={{textAlign: "center" }}>
+                        {props.title}
+                    </h3>
+                    <Img 
+                        fixed={props.img}
+                        style={{
+                            marginLeft: "auto",
+                            marginRight: "auto",
+                            display: "block",
+                        }}
+                    /> 
+                </Link>
                 <br/>
                 <p>{props.description}</p>
                 <br/>

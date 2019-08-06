@@ -18,30 +18,35 @@ const ProjectsPage = ({ data }) => {
       >
         <Project
           title="Refrain"
+          slug="/projects/refrain"
           img={data.refrainImg.childImageSharp.fixed}
           description="Refrain is meant to be used to block unhelpful websites from your device. Block distracting websites to help you stay focused while working or block news or political websites to disconnect from the anxiety-inducing news cycle for a while."
         />
         <hr/>
         <Project 
-          title="Drip"
+          title="Drip - Hydration Tracking"
+          slug="/projects/drip"
           img={data.dripImg.childImageSharp.fixed}
           description="Drip is a super simple way to log the water you drink. No account required, no annoying reminders, no excessive charts; just a way record each glass of water and get on with your life."
         />
         <hr/>
         <Project 
           title="Mutual Understanding"
+          slug="/projects/mu"
           img={data.muImg.childImageSharp.fixed}
           description="A podcast about two twentysomethings trying to better understand each other, and our realization that we have no idea what we’re doing in the adult world. Shows are released around every two weeks."
         />
         <hr/>
         <Project 
           title="Watcher"
+          slug="/projects/watcher"
           img={data.watcherImg.childImageSharp.fixed}
           description="Watcher periodically checks websites for any changes in their HTML code. When the HTML changes, you will be notified based on the alert settings for that website. Inspiration for Watcher came from repeatedly checking John Gruber’s Daring Fireball for tickets to the live recording of The Talk Show to become available."
         />
         <hr/>
         <Project 
           title="Mood"
+          slug="/projects/mood"
           img={data.moodImg.childImageSharp.fixed}
           description="Mood is an emotional health tracking app that periodically prompts you to enter your current emotional state. Over time, Mood can isolate trends in your emotional health in relation to time of day, physical activity, sleep and more."
         />

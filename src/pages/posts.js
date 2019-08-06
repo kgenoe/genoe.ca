@@ -18,7 +18,12 @@ export default ({ data }) => {
   export const query = graphql`
   {
     allMarkdownRemark (
-      filter: { fields: { slug: { ne: null} } },
+      filter: { 
+        fields: {
+           slug: { ne: null},
+           contentType: {eq: "post"}
+          } 
+        },
       sort: {order: ASC, fields: [frontmatter___date]}
     ){
       edges {

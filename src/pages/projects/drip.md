@@ -5,6 +5,8 @@ title: "Drip - Hydration Tracking"
 
 ![drip app icon](./images/drip-app-icon.png)
 
+<br>
+
 Drip is a simple way to log the water you drink. No account required, no annoying reminders, no excessive charts; just record each glass of water and get on with your life.
 
 ![drip main screen](./images/drip1.png)
@@ -21,5 +23,6 @@ The goal of Drip was to make it as frictionless as possible to record water as y
 - HealthKit integration
 - No account required
 
+<br>
 
 ![download on the app store](./images/appstore.png)

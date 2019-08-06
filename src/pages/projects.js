@@ -32,7 +32,7 @@ const ProjectsPage = ({ data }) => {
         <hr/>
         <Project 
           title="Mutual Understanding"
-          slug="/projects/mu"
+          slug="https://www.mutualunderstanding.fm"
           img={data.muImg.childImageSharp.fixed}
           description="A podcast about two twentysomethings trying to better understand each other, and our realization that we have no idea what we’re doing in the adult world. Shows are released around every two weeks."
         />

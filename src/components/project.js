@@ -1,6 +1,6 @@
 import React from "react"
 import Img from "gatsby-image"
-import { Link } from "gatsby"
+import Link from "../components/link"
 
 const Project = props => {
     return (

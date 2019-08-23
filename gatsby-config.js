@@ -5,6 +5,14 @@ module.exports = {
     author: `Kyle Genoe`,
   },
   plugins: [
+    {
+      resolve: 'gatsby-source-google-sheets',
+      options: {
+          spreadsheetId: '1ydv8bwYzAyNYQKklA7fqgxfrjxZdB0s2yboLNqTqA-s',
+          worksheetTitle: 'Sheet1',
+          credentials: require('./client_secret.json')
+      }
+    },
     `gatsby-plugin-react-helmet`,
     {
       resolve: `gatsby-source-filesystem`,

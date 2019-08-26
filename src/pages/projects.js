@@ -17,6 +17,12 @@ const ProjectsPage = ({ data }) => {
         }}
       >
         <Project
+          title="Zoocasa iOS App"
+          slug="https://www.zoocasa.com/download-app"
+          img={data.zoocasaImg.childImageSharp.fixed}
+          description="Zoocasa is a real estate website and brokerage that provides advanced search tools and data to empower Canadians to buy or sell their homes faster, easier and more successfully. For the past two years I've worked fulltime on Zoocasa's dev team as the sole developer of our iOS app."
+        />
+        <Project
           title="Refrain"
           slug="/projects/refrain"
           img={data.refrainImg.childImageSharp.fixed}
@@ -69,6 +75,9 @@ export const fluidImage = graphql`
 
 export const query = graphql`
   query {
+    zoocasaImg: file(base: {eq: "zoocasa.png"}) {
+      ...projectImage
+    }
     refrainImg: file(base: {eq: "refrain.png"}) {
       ...projectImage
     }

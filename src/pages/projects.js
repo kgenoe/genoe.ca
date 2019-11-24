@@ -17,11 +17,18 @@ const ProjectsPage = ({ data }) => {
         }}
       >
         <Project
+          title="Personal Portfolio (This Website)"
+          slug="/projects/portfolio"
+          description="This website, implemented in GatsbyJS and React. It’s my first attempt at any web design or web programming. It hosts a blog, this projects page, and a podcasts listening history page I'm quite proud of."
+        />
+        <hr/>
+        <Project
           title="Zoocasa iOS App"
           slug="https://www.zoocasa.com/download-app"
           img={data.zoocasaImg.childImageSharp.fixed}
           description="Zoocasa is a real estate website and brokerage that provides advanced search tools and data to empower Canadians to buy or sell their homes faster, easier and more successfully. For the past two years I've worked fulltime on Zoocasa's dev team as the sole developer of our iOS app."
         />
+        <hr/>
         <Project
           title="Refrain"
           slug="/projects/refrain"
@@ -35,6 +42,7 @@ const ProjectsPage = ({ data }) => {
           img={data.dripImg.childImageSharp.fixed}
           description="Drip is a super simple way to log the water you drink. No account required, no annoying reminders, no excessive charts; just a way record each glass of water and get on with your life."
         />
+        <hr/>
         <Project 
           title="Antipodes - Opposite Points"
           slug="/projects/antipodes"

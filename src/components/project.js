@@ -18,14 +18,7 @@ const Project = props => {
                     <h3 style={{textAlign: "center" }}>
                         {props.title}
                     </h3>
-                    <Img 
-                        fixed={props.img}
-                        style={{
-                            marginLeft: "auto",
-                            marginRight: "auto",
-                            display: "block",
-                        }}
-                    /> 
+                    <Image img={props.img} />
                 </Link>
                 <br/>
                 <p>{props.description}</p>
@@ -36,3 +29,20 @@ const Project = props => {
 };
 
 export default Project;
+
+function Image(props) {
+    if(!props.img) {
+        return null;
+    }
+
+    return (
+        <Img 
+            fixed={props.img}
+            style={{
+                marginLeft: "auto",
+                marginRight: "auto",
+                display: "block",
+            }}
+        /> 
+    )
+}

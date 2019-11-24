@@ -35,6 +35,12 @@ const ProjectsPage = ({ data }) => {
           img={data.dripImg.childImageSharp.fixed}
           description="Drip is a super simple way to log the water you drink. No account required, no annoying reminders, no excessive charts; just a way record each glass of water and get on with your life."
         />
+        <Project 
+          title="Antipodes - Opposite Points"
+          slug="/projects/antipodes"
+          img={data.antipodesImg.childImageSharp.fixed}
+          description="An­it­podes is a ba­sic iOS ap­pli­ca­tion for view­ing and com­par­ing an­tipodes on Earth. An an­tipode of any spot on Earth, is the point on the Earth's sur­face di­a­met­ri­cal­ly op­po­site to it."
+        />
         <hr/>
         <Project 
           title="Mutual Understanding"
@@ -82,6 +88,9 @@ export const query = graphql`
       ...projectImage
     }
     dripImg: file(base: {eq: "drip.png"}) {
+      ...projectImage
+    }
+    antipodesImg: file(base: {eq: "antipodes.png"}) {
       ...projectImage
     }
     muImg: file(base: {eq: "mu.png"}) {

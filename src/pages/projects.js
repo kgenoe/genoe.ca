@@ -35,6 +35,13 @@ const ProjectsPage = ({ data }) => {
         <hr/>
         <br/>
         <Project
+          title="Arch - API Response Caching Helper"
+          slug="https://github.com/kgenoe/arch"
+          description="Arch is simple framework that allows you to use real API data to power your iOS tests. Instead of manually mocking API response data in tests, Arch hits your API once, and caches the response to be used in future runs of your tests."
+        />
+        <hr/>
+        <br/>
+        <Project
           title="Refrain"
           slug="/projects/refrain"
           img={data.refrainImg.childImageSharp.fixed}

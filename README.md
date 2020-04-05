@@ -7,3 +7,7 @@ To run locally:
 - `npm install`
 - `gatsby develop`
 - Open [http://localhost:8000](http://localhost:8000)
+
+
+To deploy:
+- `npm run deploy`

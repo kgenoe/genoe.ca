@@ -14,12 +14,12 @@ export default ({ data }) => {
             This is a roundup of all the podcasts I've listened to in the past week.
             The list is automatically generated every Sunday for the previous week.
             A spreadsheet of my full podcast listening history can be viewed <a 
-            href="https://docs.google.com/spreadsheets/d/1ydv8bwYzAyNYQKklA7fqgxfrjxZdB0s2yboLNqTqA-s/edit?usp=sharing">
-            here</a>. Feel free to give me recommendations or feedback on <a href="https://twitter.com/KyleGenoe">
+            href="https://docs.google.com/spreadsheets/d/1ydv8bwYzAyNYQKklA7fqgxfrjxZdB0s2yboLNqTqA-s/edit?usp=sharing" target="_blank">
+            here</a>. Feel free to give me recommendations or feedback on <a href="https://twitter.com/KyleGenoe" target="_blank">
             twitter</a>.
             <br/><br/>
             This list was inspired by Wil Williams' "This Week in Podcast" series.
-            If you want a much more informed view on podcasting you should check out her work <a href="https://wilwilliams.reviews">
+            If you want to read smart things about podcasts, you should check out her work <a href="https://wilwilliams.reviews" target="_blank">
             here</a>.
 
             <br/>

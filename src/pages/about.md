@@ -15,6 +15,6 @@ Twitter: [@kylegenoe](https://twitter.com/KyleGenoe)
 
 GitHub: [kgenoe](https://github.com/kgenoe)  
 
-[Résumé](resumelinkhere)  
+<a href="Kyle-Genoe-Resume.pdf" target="_blank">Résumé</a>
 
 </center>

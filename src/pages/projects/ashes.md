@@ -5,7 +5,7 @@ title: "Ash's Pokédex"
 
 ![ash's pokédex app icon](./images/ashes-app-icon.png)
 
-[![app store link](./images/appstore.png)](http://google.ca/)
+[![app store link](./images/appstore.png)](https://appstore.com/kylegenoe/ashspokedex)
 
 
 Ash's Pokédex is a fan recreation of the Pokédex Ash used in the original Pokémon TV series. Ash's Pokédex has all the same features as the Pokédex from the show:

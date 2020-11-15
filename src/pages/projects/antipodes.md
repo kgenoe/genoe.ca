@@ -5,7 +5,8 @@ title: "Antipodes - Opposite Points"
 
 ![antipodes app icon](./images/antipodes-app-icon.png)
 
-<br>
+[![app store link](./images/appstore.png)](https://appstore.com/kylegenoe/antipodesoppositepoints)
+
 
 An­it­podes is a ba­sic iOS ap­pli­ca­tion for view­ing and com­par­ing an­tipodes on Earth. An an­tipode of any spot on Earth, is the point on the Earth's sur­face di­a­met­ri­cal­ly op­po­site to it.
 

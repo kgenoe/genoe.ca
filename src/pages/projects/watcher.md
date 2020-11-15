@@ -10,6 +10,4 @@ Watcher is a basic website monitoring application for iOS. Watcher will periodic
 
 Inspiration for Watcher came from repeatedly checking John Gruber’s Daring Fireball for tickets to the live recording of The Talk Show to become available.
 
-![app store link](./images/appstore.png)
-
-![github link](./images/github.png)
+[![github link](./images/github.png)](https://github.com/kgenoe/Watcher)

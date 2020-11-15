@@ -6,6 +6,8 @@ title: "Refrain"
 
 <br>
 
+Refrain was an app developed by me from 2016-2019. It's original purpose was to lock down Safari on iOS to remove distractions during working hours. iOS's Screen Time featureset has mostly replaced the need for Refrain, so it's development has stopped. 
+
 #### Block Unhelpful Websites
 Refrain is meant to be used to block unhelpful websites from your device. That can mean different things to different people, but here are some suggestions on how to use it effectively:
 
@@ -45,9 +47,3 @@ To start blocking distracting websites, you need to enable Refrain in the system
 For additional ways to lock down your devices, look into iOS’s Screen Time feature, as it offers many system level controls that go beyond what apps like Refrain can do. 
 
 
-#### Support
-Refrain is developed by me, Kyle Genoe, in my spare time. If you find Refrain useful, please consider donating to fund further development, any amount helps. 
-
-<br>
-
-![app store link](./images/appstore.png)

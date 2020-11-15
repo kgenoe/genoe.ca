@@ -49,14 +49,6 @@ const ProjectsPage = ({ data }) => {
         />
         <hr/>
         <br/>
-        <Project
-          title="Refrain"
-          slug="/projects/refrain"
-          img={data.refrainImg.childImageSharp.fixed}
-          description="Refrain is meant to be used to block unhelpful websites from your device. Block distracting websites to help you stay focused while working or block news or political websites to disconnect from the anxiety-inducing news cycle for a while."
-        />
-        <hr/>
-        <br/>
         <Project 
           title="Antipodes - Opposite Points"
           slug="/projects/antipodes"
@@ -67,7 +59,6 @@ const ProjectsPage = ({ data }) => {
         <br/>
         <br/>
         <br/>
-
         <h2><center>Inactive Projects</center></h2>
         <br/>
         <Project 
@@ -78,11 +69,11 @@ const ProjectsPage = ({ data }) => {
         />
         <hr/>
         <br/>
-        <Project 
-          title="Drip - Hydration Tracking"
-          slug="/projects/drip"
-          img={data.dripImg.childImageSharp.fixed}
-          description="Drip is a super simple way to log the water you drink. No account required, no annoying reminders, no excessive charts; just a way record each glass of water and get on with your life."
+        <Project
+          title="Refrain"
+          slug="/projects/refrain"
+          img={data.refrainImg.childImageSharp.fixed}
+          description="Refrain is meant to be used to block unhelpful websites from your device. Block distracting websites to help you stay focused while working or block news or political websites to disconnect from the anxiety-inducing news cycle for a while."
         />
         <hr/>
         <br/>
@@ -91,6 +82,14 @@ const ProjectsPage = ({ data }) => {
           slug="/projects/watcher"
           img={data.watcherImg.childImageSharp.fixed}
           description="Watcher periodically checks websites for any changes in their HTML code. When the HTML changes, you will be notified based on the alert settings for that website. Inspiration for Watcher came from repeatedly checking John Gruber’s Daring Fireball for tickets to the live recording of The Talk Show to become available."
+        />
+        <hr/>
+        <br/>
+        <Project 
+          title="Drip - Hydration Tracking"
+          slug="/projects/drip"
+          img={data.dripImg.childImageSharp.fixed}
+          description="Drip is a super simple way to log the water you drink. No account required, no annoying reminders, no excessive charts; just a way record each glass of water and get on with your life."
         />
         <hr/>
         <br/>

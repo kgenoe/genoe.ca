@@ -5,6 +5,11 @@ title: "Drip - Hydration Tracking"
 
 ![drip app icon](./images/drip-app-icon.png)
 
+
+<br>
+
+Drip was an app developed by me in 2018. It's purpose was to encourage me to drink water my keeping track of the amount I drank each day. It worked great, but I was able to replace it's use case with a Siri Shortcut (specifically in the Today Widget). Because of this, it's development has stopped.
+
 <br>
 
 Drip is a simple way to log the water you drink. No account required, no annoying reminders, no excessive charts; just record each glass of water and get on with your life.
@@ -24,5 +29,3 @@ The goal of Drip was to make it as frictionless as possible to record water as y
 - No account required
 
 <br>
-
-![download on the app store](./images/appstore.png)

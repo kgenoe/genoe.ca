@@ -20,6 +20,14 @@ const ProjectsPage = ({ data }) => {
         <br/>
 
         <Project
+          title="Ash's Pokédex"
+          slug="/projects/ashes"
+          img={data.ashesImg.childImageSharp.fixed}
+          description="Ashes is an iOS app that tries to best replicate Ash's Pokédex from the Pokémon Anime."
+        />
+        <hr/>
+        <br/>
+        <Project
           title="Personal Portfolio (This Website)"
           slug="/projects/portfolio"
           description="This website, implemented in GatsbyJS and React. It’s my first attempt at any web design or web programming. It hosts a blog, this projects page, and a podcasts listening history page I'm quite proud of."
@@ -111,6 +119,9 @@ export const fluidImage = graphql`
 
 export const query = graphql`
   query {
+    ashesImg: file(base: {eq: "ashes.png"}) {
+      ...projectImage
+    }
     zoocasaImg: file(base: {eq: "zoocasa.png"}) {
       ...projectImage
     }

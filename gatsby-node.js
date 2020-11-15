@@ -16,8 +16,14 @@ exports.onCreateNode = ({ node, getNode, actions }) => {
             createNodeField({ node, name: `slug`, value: slug })
             createNodeField({ node, name: `contentType`, value: "post" })
         }
-        if (fileNode.relativeDirectory.includes("pages/projects")) {
+        if (fileNode.relativeDirectory == "pages/projects") {
             createNodeField({ node, name: `slug`, value: slug })
+            createNodeField({ node, name: `contentType`, value: "project" })
+        }
+        if (fileNode.relativeDirectory.includes("pages/projects/")) {
+            var value = fileNode.relativeDirectory.replace("pages/projects", "");
+            value = value+slug;
+            createNodeField({ node, name: `slug`, value: value})
             createNodeField({ node, name: `contentType`, value: "project" })
         }
     }

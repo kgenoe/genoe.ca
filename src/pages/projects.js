@@ -20,10 +20,10 @@ const ProjectsPage = ({ data }) => {
         <br/>
 
         <Project
-          title="Ash's Pokédex"
-          slug="/projects/ashes"
-          img={data.ashesImg.childImageSharp.fixed}
-          description="Ashes is an iOS app that tries to best replicate Ash's Pokédex from the Pokémon Anime."
+          title="PokéScanner"
+          slug="/projects/pokescanner"
+          img={data.pokescannerImg.childImageSharp.fixed}
+          description="PokéScanner is an iOS app that tries to best replicate Ash's Pokédex from the Pokémon Anime."
         />
         <hr/>
         <br/>
@@ -118,7 +118,7 @@ export const fluidImage = graphql`
 
 export const query = graphql`
   query {
-    ashesImg: file(base: {eq: "ashes.png"}) {
+    pokescannerImg: file(base: {eq: "pokescanner.png"}) {
       ...projectImage
     }
     zoocasaImg: file(base: {eq: "zoocasa.png"}) {

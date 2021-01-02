@@ -2,9 +2,9 @@
 
 <br>
 
-Hey, I'm Kyle. I'm an iOS developer, currently living in Toronto, Canada. I have Bachelor of Computer Science from the University of Guelph.
+Hey, I'm Kyle. I'm an iOS developer, working for Zoocasa Realty, in Toronto, Canada. I have Bachelor of Computer Science from the University of Guelph.
 
-In my spare time I develop my own iOS apps, listen to podcasts, I may write about some of the things i make/do, here.
+In my spare time I develop my own iOS apps, listen to podcasts, and pursue a bunch of random hobbies (this month is [knitting](https://www.ravelry.com/people/kylegenoe)!).
 
 <br>
 

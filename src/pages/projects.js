@@ -59,7 +59,7 @@ const ProjectsPage = ({ data }) => {
         <br/>
         <br/>
         <br/>
-        <h2><center>Inactive Projects</center></h2>
+        <h2><center>Past Projects</center></h2>
         <br/>
         <Project 
           title="Mood"

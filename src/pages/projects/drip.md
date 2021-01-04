@@ -29,5 +29,3 @@ The goal of Drip was to make it as frictionless as possible to record water as y
 - No account required
 
 <br>
-
-[![github link](./images/github.png)](https://github.com/kgenoe/Drip)

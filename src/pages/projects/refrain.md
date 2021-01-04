@@ -45,6 +45,3 @@ To start blocking distracting websites, you need to enable Refrain in the system
 
 #### Other Options
 For additional ways to lock down your devices, look into iOS’s Screen Time feature, as it offers many system level controls that go beyond what apps like Refrain can do. 
-
-
-[![github link](./images/github.png)](https://github.com/kgenoe/Refrain)

@@ -10,14 +10,15 @@ export default ({ data }) => {
   return (
     <Layout>
       <SEO title="Home" />
-      {postsFromData(data)}
-      <Link 
-        to="/posts/"
-        activeStyle={{ color: `darkGrey` }}
-        style={{ color: `black` }}
-      >
-      View All Posts
-      </Link>
+      <div 
+        style={{
+          marginLeft: "auto",
+          marginRight: "auto",
+          textAlign: "center",
+        }}>
+        <h2>Hello, and welcome to my website</h2>
+        please make yourself at home
+      </div>
     </Layout>
   )
 }

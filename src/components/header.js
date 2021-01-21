@@ -44,9 +44,9 @@ const Header = ({ siteTitle }) => (
     </div>
     <div style={{textAlign: `center`}}>
       <ul style={{listStyle: `none`}}>
-        <ListLink to="/posts/">POSTS</ListLink>
-        <ListLink to="/projects/">PROJECTS</ListLink>
         <ListLink to="/about/">ABOUT</ListLink>
+        <ListLink to="/projects/">PROJECTS</ListLink>
+        <ListLink to="/contact/">CONTACT</ListLink>
       </ul>
     </div>
   </header>

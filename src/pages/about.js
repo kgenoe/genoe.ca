@@ -11,7 +11,7 @@ export default ({ data }) => {
           <SEO title="About Kyle Genoe" />
           <div 
           style={{
-            maxWidth: 400, 
+            maxWidth: 400,
             marginLeft: "auto",
             marginRight: "auto",
           }}>

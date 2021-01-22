@@ -1,74 +1,27 @@
 import React from "react"
 import { graphql } from "gatsby"
-import { Link } from "gatsby"
+import Img from "gatsby-image"
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 
 export default ({ data }) => {
-  console.log(postsFromData(data))
   return (
     <Layout>
       <SEO title="Home" />
-      <div 
-        style={{
-          marginLeft: "auto",
-          marginRight: "auto",
-          textAlign: "center",
-        }}>
-        <h2>Hello, and welcome to my website</h2>
-        please make yourself at home
-      </div>
+      <Img fluid={data.file.childImageSharp.fluid} />
     </Layout>
   )
 }
 
 export const query = graphql`
-{
-  allMarkdownRemark (
-    filter: { fields: { slug: { ne: null} } },
-    sort: {order: ASC, fields: [frontmatter___date]},
-    limit: 2
-  ){
-    edges {
-      node {
-        html
-        frontmatter {
-          title
-          date
-        }
-        fields {
-          slug
+  query {
+    file(relativePath: { eq: "images/splash.png" }) {
+      childImageSharp {
+        fluid(maxWidth: 1200) {
+          ...GatsbyImageSharpFluid
         }
       }
     }
   }
-}
 `
-
-function postsFromData(data) {
-  const posts= [];
-  data.allMarkdownRemark.edges.forEach(( { node }) => {
-    posts.push(
-    <div>
-      <Link
-        to={`/posts/${node.fields.slug}`}
-        activeStyle={{ color: `darkGrey` }}
-        style={{ 
-          textDecoration: `none`,
-          color: `black`,
-        }}
-      >
-        <h2>{node.frontmatter.title}</h2>
-      </Link>
-      <p>{node.frontmatter.date}</p>
-      <div dangerouslySetInnerHTML={{ __html: node.html }} />
-      <br/>
-      <hr/>
-      <br/>
-      <br/>
-    </div>
-    )
-  });
-  return posts;
-}
